@@ -1,0 +1,870 @@
+/* line 3, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#wizard {
+  position: absolute;
+  width: 70%;
+  top: 10px;
+  bottom: 30px;
+  min-height: 500px;
+}
+/* line 9, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#wizard span.required::after {
+  content: "*";
+  color: red;
+}
+/* line 13, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#wizard .checkbox, #wizard .radio {
+  padding: 5px 10px;
+  line-height: 22px;
+  margin: 0;
+}
+
+/* line 20, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.steps {
+  padding: 0px 10px;
+  height: 35px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 0;
+  counter-reset: section;
+}
+
+/* line 28, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.steps li {
+  display: block;
+  float: left;
+  position: relative;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+/* line 34, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.steps li:before {
+  counter-increment: section;
+  content: counters(section,".") ". ";
+}
+/* line 38, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.steps li a {
+  display: none;
+}
+/* line 42, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.steps li.active {
+  font-weight: bold;
+  border-bottom: 4px solid #4995b9;
+}
+/* line 46, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.steps li span {
+  z-index: 2;
+}
+
+/* line 51, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-header {
+  z-index: 1;
+  padding: 0 15px;
+}
+/* line 54, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-header > h4 {
+  padding: 8px 0;
+  margin: 0;
+}
+/* line 57, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-header > h4 i {
+  margin-right: 6px;
+}
+
+/* line 63, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content {
+  position: absolute;
+  top: 70px;
+  bottom: 35px;
+  margin-bottom: 15px;
+  overflow: auto;
+  padding: 15px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 0;
+  width: 100%;
+}
+/* line 73, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .form-group {
+  margin-bottom: 0;
+}
+/* line 76, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content textarea.access-whitelist {
+  resize: vertical;
+  max-height: 300px;
+}
+/* line 80, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .cke_contents.cke_reset {
+  max-height: 200px;
+}
+/* line 83, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content input {
+  height: 30px;
+  padding: 3px 5px;
+  font-size: 14px;
+  float: left;
+  margin-bottom: 5px;
+}
+/* line 90, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content input[type="checkbox"], .wizard-content input[type="radio"] {
+  height: inherit;
+}
+/* line 93, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content input[type="file"] {
+  padding: 1px 2px;
+}
+/* line 96, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content textarea {
+  padding: 5px;
+}
+/* line 99, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .col-70 {
+  width: 70%;
+  float: left;
+  line-height: 30px;
+}
+/* line 104, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .col-60 {
+  width: 60%;
+  float: left;
+}
+/* line 108, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .col-50 {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+/* line 113, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .col-40 {
+  width: 40%;
+  float: left;
+}
+/* line 117, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .col-30 {
+  width: 30%;
+  float: left;
+}
+/* line 121, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .row {
+  margin: 0;
+  margin-bottom: 10px;
+}
+/* line 124, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .row .col-md-4, .wizard-content .row .col-md-8 {
+  padding: 0 3px;
+}
+/* line 127, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .row h5 {
+  margin: 0;
+  float: right;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 5px 0;
+  text-align: right;
+}
+/* line 135, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .row h6 {
+  margin: 0;
+}
+/* line 138, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .row .form-control[readonly] {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  color: #555;
+}
+/* line 144, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .row.row-header {
+  margin-top: 15px;
+  background-color: #f0f0f0;
+  padding: 5px 0;
+  color: #555;
+}
+/* line 149, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .row.row-header h6 {
+  font-size: 14px;
+}
+/* line 153, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content select {
+  background-color: transparent;
+  height: 24px;
+  float: left;
+  width: 50%;
+  padding: 2px;
+}
+/* line 161, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content select[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #f0f0f0;
+}
+/* line 167, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content .tab-pane {
+  position: relative;
+  padding: 0 15px;
+}
+/* line 171, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content > .content {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+}
+/* line 177, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content ul {
+  list-style: none;
+}
+/* line 179, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-content ul.typeahead {
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 188, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer {
+  position: absolute;
+  height: 35px;
+  width: 100%;
+  bottom: 0;
+  right: 15px;
+}
+/* line 194, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer .btn {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  padding: 5px 0px;
+  width: 160px;
+  height: 32px;
+  font-size: 13px;
+}
+/* line 201, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer .btn .spinner {
+  display: none;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+/* line 208, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer .btn.disabled span {
+  display: none;
+}
+/* line 211, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer .btn.disabled .spinner {
+  display: inline-block;
+  margin: 3px 0px;
+}
+/* line 216, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer .btn i {
+  margin: 0 5px;
+}
+/* line 220, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer .btn.disabled .spinner {
+  display: inherit;
+}
+/* line 223, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer .btn-cancel {
+  display: block;
+  float: left;
+}
+/* line 227, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer .error-message {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  border: 1px solid #e74c3c;
+}
+/* line 232, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer .error-message p {
+  background-color: #fff;
+  color: #e74c3c;
+  padding: 2px 6px;
+  margin: 1px;
+}
+/* line 237, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer .error-message p a.close {
+  display: inline-block;
+  float: left;
+  width: 16px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  height: 16px;
+  color: #e74c3c;
+  opacity: .7;
+  margin-top: 1px;
+}
+/* line 248, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.wizard-footer .error-message p a.close:hover {
+  opacity: 1;
+}
+
+/* line 258, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .tag {
+  height: 30px;
+  line-height: 30px;
+  padding-right: 15px;
+}
+/* line 263, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .input-group {
+  width: 100%;
+  padding-right: 25px;
+}
+/* line 266, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .input-group.date, #tab-project-info .input-group.number, #tab-project-info .input-group.contact-list, #tab-project-info .input-group.dropdown, #tab-project-info .input-group.dynamic-dropdown, #tab-project-info .input-group.approval {
+  width: 50%;
+}
+/* line 270, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .help-block {
+  font-size: 12px;
+  margin-bottom: 0px;
+  margin-top: 3px;
+}
+/* line 275, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .header {
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 15px 0;
+}
+/* line 280, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .header.double {
+  height: 45px;
+}
+/* line 284, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .header .spinner {
+  position: absolute;
+  top: 45%;
+}
+/* line 289, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .input-group-addon {
+  padding: 7px 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* line 294, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .field-button {
+  display: block;
+  font-family: FontAwesome;
+  font-style: normal;
+}
+/* line 298, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .field-button.contact-list:before {
+  content: "\f007";
+}
+/* line 301, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .field-button.date:before {
+  content: "\f073";
+}
+/* line 304, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .field-button.dropdown:before {
+  content: "\f0d7";
+}
+/* line 307, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .field-button.number {
+  background-image: url(/assets/number.png);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 16px;
+  margin: -3px;
+}
+/* line 314, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-project-info .field-button.approval-link:before {
+  content: "\f0c1";
+}
+
+/* line 320, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.text-header-search {
+  float: left;
+  width: 650px;
+  line-height: 18px;
+}
+
+/* line 326, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.text-header {
+  float: left;
+  width: aoto;
+  line-height: 18px;
+}
+
+/* line 332, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#treeview-search {
+  float: right;
+  width: 240px;
+}
+
+/* line 338, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.text-description {
+  font-size: 12px;
+}
+
+/* line 344, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#target-treeview li.readonly {
+  display: none;
+}
+
+/* line 350, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#confirm-create .col-md-4, #confirm-create .col-md-6 {
+  padding-left: 5px;
+  padding-right: 0;
+}
+
+/* line 357, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.row.spinner .loading {
+  width: 100%;
+  background-color: white;
+  z-index: 5;
+  top: 0;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  height: 435px;
+  position: absolute;
+}
+
+/* line 370, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.column-settings {
+  height: 115px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 379, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.step2 #sellect_closed_status_value {
+  width: 100%;
+  float: left;
+  height: 128px;
+  border: 1px solid #ccc;
+  padding: 0 0 0 30px;
+  overflow: auto;
+}
+/* line 386, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.step2 #sellect_closed_status_value label:first-child {
+  margin-top: 5px;
+}
+
+/* customize mulselection with sortable */
+/* line 393, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.ms-selection .ui-sortable-handle {
+  cursor: move !important;
+}
+
+/* line 399, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab5-fields textarea {
+  height: 125px;
+}
+
+/* line 405, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.description-info .tooltip-inner {
+  max-width: 400px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #aaa;
+  padding: 3px 10px;
+}
+/* line 412, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.description-info .popover {
+  max-height: 320px;
+  max-width: 640px;
+  width: 640px;
+  overflow: hidden;
+}
+/* line 418, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.description-info .popover-content {
+  padding: 5px;
+}
+
+/* line 423, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+textarea.access-whitelist {
+  resize: vertical;
+  max-height: 300px;
+}
+
+/* line 428, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput {
+  padding: 4px 4px;
+  height: auto;
+  width: 100%;
+  border-radius: 0;
+}
+/* line 433, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput .label {
+  float: left;
+  font-size: 100%;
+  margin: 2px;
+  font-weight: normal;
+  border: 1px solid #4995b9;
+  color: #5e5e5e;
+  border-radius: 0;
+  padding: 4px 6px;
+}
+/* line 443, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput input {
+  margin: -4px;
+  min-width: 120px;
+  max-width: 240px;
+  border: none;
+}
+/* line 449, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput .label-count {
+  width: 70px !important;
+}
+
+/* line 454, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.row.header {
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+/* line 460, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.row.header.double {
+  height: 45px;
+}
+
+/* line 466, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-sharing .radio {
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 240px;
+  min-height: 24px;
+}
+/* line 472, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-sharing .radio label span {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 1px 0;
+  display: block;
+}
+/* line 479, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-sharing .checkbox {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* line 484, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-sharing .learn-more {
+  float: right;
+}
+/* line 487, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-sharing .sharing-block {
+  padding-right: 10px;
+}
+/* line 490, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-sharing .sharing-block.active {
+  display: block;
+}
+
+/* line 496, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced {
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+/* line 499, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced th {
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+/* line 501, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced th:nth-child(1) {
+  width: 275px;
+}
+/* line 504, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced th:nth-child(2) {
+  width: 185px;
+}
+/* line 509, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced th:nth-child(4) {
+  width: 40px;
+}
+/* line 513, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced tr, .table-advanced th {
+  line-height: 15px;
+}
+/* line 516, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced td {
+  text-align: left;
+}
+/* line 519, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced input, .table-advanced select {
+  width: 100%;
+  margin: 0;
+  height: 26px;
+}
+/* line 524, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced .tag {
+  width: 210px;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+  padding: 4px 20px;
+}
+/* line 530, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced .tag [data-role="remove"] {
+  position: absolute;
+  left: -2px;
+  top: 4px;
+  font-size: .7em;
+}
+/* line 537, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced .bootstrap-tagsinput {
+  cursor: pointer;
+}
+/* line 539, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced .bootstrap-tagsinput.focus {
+  overflow: auto;
+}
+/* line 542, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced .bootstrap-tagsinput:hover {
+  border-color: #7b8a8b;
+}
+/* line 545, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.table-advanced .bootstrap-tagsinput input {
+  clear: left;
+  width: 100%;
+}
+
+/* line 552, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+span.error {
+  color: #e74c3c;
+  display: block;
+  margin: 5px;
+}
+
+/* line 558, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput {
+  min-height: 32px;
+}
+/* line 561, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput.disabled span[data-role='remove'], .bootstrap-tagsinput.disabled input {
+  display: none;
+}
+/* line 564, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput.disabled .label {
+  opacity: .5;
+}
+/* line 569, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  padding: 3px 0px;
+  opacity: .5;
+}
+/* line 572, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  font-family: 'FontAwesome';
+  content: "\f00d";
+}
+/* line 576, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  opacity: 1;
+}
+/* line 581, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput .tag.disabled {
+  opacity: .5;
+}
+/* line 583, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.bootstrap-tagsinput .tag.disabled span[data-role='remove'] {
+  display: none;
+}
+
+/* line 590, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-confirm .template-list {
+  max-height: 320px;
+  overflow: auto;
+  border: 1px solid #e0e0e0;
+  padding: 4px 0;
+}
+/* line 596, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#tab-confirm .template-list li label input {
+  margin-left: -45px;
+}
+
+/* line 604, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.smartsheet-icon {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+}
+/* line 611, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.smartsheet-icon.sheet {
+  background-image: url(/assets/icon-sheet.png);
+}
+/* line 614, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.smartsheet-icon.report {
+  background-image: url(/assets/icon-report.png);
+}
+/* line 617, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.smartsheet-icon.sight {
+  background-image: url(/assets/icon-sight.png);
+}
+/* line 620, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.smartsheet-icon.workspace {
+  background-image: url(/assets/icon-workspace.png);
+}
+
+/* line 625, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.config-sheets {
+  list-style: none;
+  margin: 20px 0 20px 20px;
+  padding: 0;
+}
+/* line 629, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.config-sheets li {
+  margin: 15px 0px;
+}
+/* line 631, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.config-sheets li > label {
+  font-weight: normal;
+}
+/* line 633, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.config-sheets li > label > span {
+  display: inline-block;
+  margin-left: 6px;
+  margin-top: 2px;
+}
+
+/* line 642, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.select-config {
+  width: 640px;
+  margin: 0 auto;
+}
+/* line 645, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.select-config .btn {
+  width: 130px;
+}
+
+/* line 650, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#direct-link {
+  width: 100%;
+}
+
+/* line 655, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#template-container .active .icon::before {
+  content: "\f00c";
+  color: #4995b9;
+}
+/* line 659, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+#template-container .template-icon {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 666, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates {
+  padding: 5px 10px;
+  height: 100%;
+}
+/* line 670, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates.required li.active {
+  opacity: 0.75;
+  cursor: normal;
+}
+/* line 675, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li {
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  padding: 8px 8px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+/* line 683, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li .template-icon {
+  position: absolute;
+}
+/* line 686, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li .template-name {
+  float: left;
+  width: 40%;
+  padding-left: 24px;
+}
+/* line 691, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li .template-description {
+  float: left;
+  color: #828282;
+  width: 59%;
+  padding-right: 20px;
+}
+/* line 697, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li .icon {
+  position: absolute;
+  right: 6px;
+  font-family: 'FontAwesome';
+  margin-top: 0px;
+}
+/* line 702, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li .icon:before {
+  content: "\f067";
+  color: #afafaf;
+}
+/* line 708, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li.group {
+  padding: 10px;
+  padding-top: 10px;
+  box-shadow: 0px 1px 0px #e0e0e0;
+}
+/* line 712, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li.group .group-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* line 716, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li.group .group-content {
+  padding: 10px;
+  padding-bottom: 0px;
+  border: 1px solid #e0e0e0;
+}
+/* line 720, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li.group .group-content ul {
+  padding: 0px;
+}
+/* line 722, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li.group .group-content ul li {
+  background-color: white;
+}
+/* line 724, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li.group .group-content ul li.active {
+  background-color: #ecf4f7;
+}
+/* line 731, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li.active {
+  border: 1px solid #9dc6d8;
+  background-color: #ecf4f7;
+}
+/* line 735, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+ul.templates li.active.required {
+  opacity: 0.75;
+  cursor: default;
+}
+
+/* line 741, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.custom-email {
+  margin-top: 20px;
+}
+/* line 743, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.custom-email.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* line 749, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.fileupload-buttonbar {
+  margin-bottom: 0px;
+}
+
+/* line 753, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.file-table {
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+/* line 757, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.file-table tr td {
+  border-top: 1px solid #e0e0e0 !important;
+}
+/* line 760, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/wizard.css.scss */
+.file-table tr td:last-child {
+  text-align: right;
+}

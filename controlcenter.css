@@ -1,0 +1,305 @@
+/* line 3, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+#home-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+/* line 7, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+#home-content #board-list {
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+/* line 12, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket thead {
+  background-color: #6f6f6f;
+  color: white;
+}
+/* line 16, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket thead tr th {
+  border: 1px solid #dddddd;
+  font-weight: normal;
+}
+/* line 19, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr {
+  color: black;
+}
+/* line 21, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr:first-child {
+  border-top: none;
+}
+/* line 23, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr:hover {
+  background-color: #d8d8d8;
+  cursor: pointer;
+  color: #333333;
+}
+/* line 28, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.even {
+  background-color: #efefef;
+}
+/* line 30, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.even:hover, .table-ticket tbody tr.even.active, .table-ticket tbody tr.even.active:hover {
+  background-color: #d8d8d8;
+  color: #333333;
+}
+/* line 33, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.even:hover td, .table-ticket tbody tr.even.active td, .table-ticket tbody tr.even.active:hover td {
+  background-color: #d8d8d8;
+  border-top: none;
+}
+/* line 37, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.odd {
+  background-color: white;
+}
+/* line 39, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.odd:hover, .table-ticket tbody tr.odd.active, .table-ticket tbody tr.odd.active:hover {
+  background-color: white;
+  border: 1px solid white;
+}
+/* line 42, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.odd:hover td, .table-ticket tbody tr.odd.active td, .table-ticket tbody tr.odd.active:hover td {
+  background-color: white;
+  border: 1px solid white;
+}
+/* line 45, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.odd td {
+  background-color: white;
+  border: 1px solid white;
+}
+/* line 49, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.extended {
+  display: none;
+}
+/* line 51, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.extended.active {
+  display: table-row;
+}
+/* line 53, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.extended .btn {
+  margin-left: 10px;
+  margin-top: 0;
+  min-width: 46px;
+  height: 32px;
+  border: 1px solid #659fc5;
+  color: #333333;
+}
+/* line 60, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.extended .btn:hover {
+  border-color: #366b8e;
+  color: black;
+}
+/* line 63, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.extended .btn span.hidden-mobile {
+  margin-left: 5px;
+}
+/* line 65, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.extended .btn-primary {
+  color: #eeeeee;
+}
+/* line 67, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.table-ticket tbody tr.extended .btn-primary:hover {
+  color: white;
+}
+
+/* line 71, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.ic-attachment {
+  background-image: url(/assets/attachment.png);
+}
+/* line 73, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.ic-attachment:hover {
+  cursor: pointer;
+}
+
+/* line 76, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.ic-discussion {
+  background-image: url(/assets/discussion.png);
+}
+/* line 78, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.ic-discussion:hover {
+  cursor: pointer;
+}
+
+/* line 81, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.ic-info {
+  background-image: url(/assets/info-icon-blue.png);
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin: 1px 5px;
+}
+
+/* line 88, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.ic-attachment, .ic-discussion {
+  float: left;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+  margin-top: -3px;
+  margin-bottom: -5px;
+}
+/* line 96, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.ic-attachment .number, .ic-discussion .number {
+  border-radius: 9px;
+  width: 18px;
+  height: 18px;
+  line-height: 16px;
+  background-color: #3399cc;
+  color: white;
+  float: left;
+  margin-left: 7px;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 0px;
+}
+
+/* line 110, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.form-control {
+  height: 36px;
+}
+/* line 112, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.form-control[disabled] {
+  background-color: #f0f0f0;
+  opacity: 0.6;
+}
+
+/* line 116, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.email-login-form {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+}
+/* line 124, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.email-login-form .alert-info {
+  padding: 10px;
+  margin: 0 0 5px 0;
+}
+/* line 127, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.email-login-form .btn {
+  margin-right: 10px;
+}
+
+/* line 131, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+#ticket-details-content .row {
+  margin: 0;
+  margin-bottom: 3px;
+  padding: 5px 0;
+}
+/* line 135, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+#ticket-details-content .row:nth-child(odd) {
+  background-color: #eeeeee;
+}
+/* line 137, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+#ticket-details-content .row .col-lg-4 {
+  font-weight: bold;
+}
+/* line 139, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+#ticket-details-content .row div[class*='col-lg-'] {
+  min-height: 20px;
+}
+
+/* line 142, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.ticket-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #397095;
+  line-height: 32px;
+}
+/* line 149, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.ticket-header .btn-toggle {
+  width: 30px;
+  height: 30px;
+  line-height: 22px;
+  margin-right: 5px;
+  border: 1px solid white;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  float: left;
+  color: #488cb9;
+}
+/* line 160, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.ticket-header .btn-toggle:hover {
+  border: 1px solid #488cb9;
+  border-radius: 5px;
+  color: #397095;
+}
+
+/* line 165, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+ul.messenger.messenger-theme-block.messenger-fixed .messenger-message .messenger-close {
+  top: 0px !important;
+  left: 0px !important;
+}
+
+/* line 169, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+ul.messenger.messenger-theme-block.messenger-fixed.messenger-on-bottom, ul.messenger.messenger-theme-block.messenger-fixed.messenger-on-top, ul.messenger.messenger-theme-block.messenger-fixed.messenger-on-center {
+  right: 10px !important;
+}
+/* line 172, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+ul.messenger.messenger-theme-block.messenger-fixed.messenger-on-bottom li .messenger-message, ul.messenger.messenger-theme-block.messenger-fixed.messenger-on-top li .messenger-message, ul.messenger.messenger-theme-block.messenger-fixed.messenger-on-center li .messenger-message {
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+  padding: 10px;
+  line-height: 20px;
+}
+
+/* line 178, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+ul.messenger.messenger-theme-block.messenger-fixed.messenger-on-center {
+  margin: 0 auto;
+  width: 30%;
+  top: 40px;
+}
+
+/* line 184, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.result-message ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+/* line 188, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.icon {
+  display: block;
+  float: left;
+  width: 11px;
+  height: 11px;
+  margin: 3px 0;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+}
+
+/* line 197, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.icon-plus {
+  background-image: url("plus.png");
+}
+/* line 199, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.icon-plus:hover {
+  background-image: url("plus-active.png");
+}
+
+/* line 204, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.add-item:hover .icon-plus {
+  background-image: url("plus-active.png");
+}
+
+/* line 207, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.icon-plus-white {
+  background-image: url("plus-white.png");
+}
+
+/* line 210, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.icon-plus-blue {
+  background-image: url("plus.png");
+}
+
+/* line 213, /Users/phuoc/Documents/Workspace/vida_lab/smartsheet/smartsheet_controlcenter/app/assets/stylesheets/controlcenter.css.sass */
+.btn-refresh {
+  display: none;
+}
