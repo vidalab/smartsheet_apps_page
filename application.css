@@ -12,27 +12,35 @@
  *
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  */
+
+.thumbnail {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.thumbnail .caption {
+  background: white;
+  border: 1px solid #ddd;
+  padding-top: 40px;
+}
+
+.thumbnail .buttons-bar {
+  padding: 15px;
+  border-top: 5px solid #ffa500;
+}
+
+.thumbnail .buttons-bar .btn-primary {
+  background-color: #3c9de0;
+  border-color: #3c9de0;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-weight: bold;
+  min-width: 110px;
+}
+
+.thumbnail a > img.app-icon {
+  height: 100px;
+}
